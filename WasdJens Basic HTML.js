@@ -7,6 +7,11 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
+app.get('/Lukas', (req, res) => {
+    console.log('Got a GET request on "/Lukas" ' );
+    res.send('Lukas Bade sitzt neben mir!');
+});
+
 app.listen(port, () => {
     console.log('Running...');
 });
